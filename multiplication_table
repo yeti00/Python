@@ -1,0 +1,18 @@
+'''
+@@ This simple code print the multiplication table starting with 1. Then it asks user
+whether to proceed or abort.
+@@ No input validation is performed in this code.
+
+'''
+
+print("\n##### Multiplication Tables #####\n")
+start=1 
+while (True):  
+    iteration=1;  
+    while iteration<=10:  
+        print("%d X %d = %d\n"%(start,iteration,start*iteration));  
+        iteration = iteration+1;  
+    choice = int(input("Continue printing the table (0=No, 1=Yes?: "))  
+    if choice == 0:  
+        break;      
+    start=start+1 
